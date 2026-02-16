@@ -83,6 +83,18 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
+        .logo img {
+             height: 50px;
+            width: 50px;
+            border-radius: 50%; /* Makes it a perfect circle */
+            object-fit: cover; /* Ensures image fills the circle properly */
+            transition: transform 0.3s ease; /* Smooth transition */
+            cursor: pointer; /* Shows it's interactive */
+    }
+
+    .logo img:hover {
+    transform: scale(2.0); /* Zooms to 120% size */
+}
 
         .nav-links {
             display: flex;
